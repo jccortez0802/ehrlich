@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+html {
+    width: 100%;
+    overflow-x: hidden;
+	scroll-behavior: smooth;
+    /* background-color: #494747; */
+}
+body {
+    width: 100%;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container{
+    padding: 0 20px;
+}
+
+/* NAVIGATION */
+header {
+    width: 100%;
+}
+nav {
+    display: flex;
+    position: relative;
+    flex-direction: row;
+    font-size: 14px;
+    background-color: #fff;
+    width: 100%;
+}
+nav.fixed{
+    position: fixed;
+    top: 0;
+}
+nav > div, .benefits > div {
+    width: 100%;
+}
+ul{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+li {
+    padding: 9px 15px 15px 9px;
+    text-transform: uppercase;
+}
+.categories{
+    padding: 0 20px;
+}
+.categories > .list > li {
+    float: left;
+}
+.options > .list, .options > .list > li {
+    float: right;
+}
+.selected {
+    font-weight: 600;
+}
+.categories{
+    display: flex;
+}
+.logo{
+    margin: auto;
+    text-align: center;
+}
+.currency{
+    padding: 3px;
+    display: flex;
+    align-items: center;
+    border-radius: 35px;
+    border: 1px solid #F2F2F2;
+}
+.currency > span {
+    font-size: 14px;
+    margin-left: 5px;
+}
+
+/* BENEFITS */
+
+.benefits{
+    background-color: #F2F2F2;
+    display: flex;
+    font-size: 12px;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+
+}
+.benefit-item{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.benefit-item > span {
+    margin-left: 15px;
+}
+
+/* HERO */
+
+.hero-img{
+    width: 100%;
+}
+
+/* SITE WIDE DEALS */
+
+.site-deals{
+    display: flex;
+    gap: 75px;
+    /* grid-template-columns: repeat(5, 1fr); */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 45px 40px;
+}
+.deal-heading, .deal-sub{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.deal-amount{
+    font-size: 32px;
+    width: 69px;
+    height: 40px;
+    font-weight: 600;
+}
+.deal-off{
+    font-size: 18px;
+    width: 48px;
+    height: 20px;
+    font-weight: 800;
+}
+.deal-sub{
+    font-size: 10px;
+    text-transform: uppercase;
+}
+.btn-deals{
+    color: #FFF;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 0px;
+    padding: 10px 20px;
+    background-color: #000;
+}
+
+/* VIP EXCLUSIVE */
+.vip-exclusive{
+    background: #000;
+    background-image: url("./images/Rectangle.png");
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    color: #eee;
+}
+.vip-bg{
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.00) 13.54%, #000 40.10%, #000 100%);
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.vip-heading{
+    width: 472px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 32px;
+    text-transform: uppercase;
+    font-weight: 800;
+}
+.vip-sub{
+    width: 354px;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin: 0 147px 0 24px;
+}
+.vip-cta{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.btn-vip, .btn-arrival{
+    color: #000;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 0px;
+    padding: 10px 20px;
+    background-color: #FFF;
+}
+
+/* TRENDING */
+
+.trending{
+    padding: 40px 190px;
+    text-align: center;
+}
+.trending span{
+    display: block;
+}
+.trend-heading{
+    padding: 10px 20px 20px 20px;
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: capitalize;
+    
+}
+.trend-sub{
+    padding: 10px 20px 20px 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+.sub-categories{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.sub-categories-item{
+    padding: 20px;
+}
+.sub-categories-item img{
+    width: 100%;
+}
+.sub-categories-heading{
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+}
+.hashtags{
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+.hashtag{
+    border-radius: 50px;
+    border: 1px solid #000;
+    background: #FFF;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+/* NEW ARRIVALS */
+
+.new-arrivals{
+    background-image: url("./images/bg-1.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    color: #eee;
+    display: block;
+}
+.arrivals-heading{
+    padding: 47px 0 0 60%;
+    width: 462px;
+    font-size: 86px;
+    font-weight: 800;
+    line-height: 86px;
+    text-transform: uppercase;
+}
+.arrivals-sub{
+    padding: 21px 0 0 60%;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+}
+
+/* Button Arrival same styling with VIP Exclusive Button */
+.btn-arrival{
+    margin: 43px 0 41px 60%;
+}
+
+/* Recently Bought */
+.recent-bought{
+    text-align: center;
+    padding: 40px 20px;
+}
+.recent-heading{
+    font-size: 36px;
+    font-weight: 800;
+    text-transform: capitalize;
+}
+.recent-container{
+    display: grid;
+    gap: 9px;
+    grid-template-columns: repeat(5, 1fr);
+    padding-top: 10px;
+}
+.recent-item{
+    padding: 20px;
+    
+}
+.recent-item > img{
+    width: 100%;
+}
+.recent-item > span {
+    text-align: left;
+    font-size: 14px;
+    text-transform: capitalize;
+    display: block;
+}
+.pricing{
+    text-align: left;
+}
+.recent-name{
+    height: 50px;
+}
+.recent-price{
+    font-weight: 600;
+}
+.recent-sale{
+    color: #C1272D;
+    font-weight: 600;
+}
+.recent-initial{
+    text-decoration: line-through;
+    margin-left: 30px;
+    display: inline;
+    font-weight: 600;
+}
+
+/* INSPO */
+
+.inspo{
+    background: #F2F2F2;
+    padding: 40px 20px 60px 20px;
+    text-align: center;
+}
+.inspo > span {
+    display: block;
+    text-align: center;
+}
+.inspo-images{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap:49px;
+    margin: 31px 0px;
+    width: 100%;
+}
+.inspo-images img{
+    width: 100%;;
+}
+.btn-inspo{
+    color: #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: 0px;
+    padding: 10px 20px;
+    background-color: #000;
+}
+
+/* NEWSLETTER */
+.newsletter{
+    height: 75px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000;
+}
+.news-heading{
+    color: #FFF;
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+.news-txtfield{
+    display: flex;
+    align-items: center;
+}
+.txt-news{
+    margin-left: 48px;;
+    padding-left: 20px;
+    width: 319px;
+    height: 35px;
+    background: #F2F2F2;
+    border: none;
+}
+.txt-news::placeholder{
+    color: #4D4D4D;
+    font-family: 'Montserrat', sans-serif;
+}
+.btn-news{
+    height: 35px;
+    width: 35px;
+    background: #FFF;
+    border: none;
+}
+
+/* FOOTER */
+
+.footer{
+    padding: 40px 20px 60px 20px;
+}
+.shop-related{
+    display: flex;
+}
+.shop-links{
+    display: flex;   
+}
+.shop-list{
+    padding-right: 20px;
+}
+.shop-list ul{
+    display: block;
+    font-size: 12px;
+}
+.shop-list > ul > li:first-child{
+    font-weight: 600;
+}
+
+.others{
+    margin-left: 112px;
+
+}
+.others-list > span {
+    display: block;
+    padding: 10px 0px;
+}
+.others-list:first-child > img {
+    margin-right: 10px;
+
+}
+.others-list:last-child > img {
+    width: 37.5px;
+    height: 25px;
+    margin-right: 10px;
+
+}
+.trademark{
+    margin-top: 29px;
+}
+.trade-text{
+    font-size: 12px;
+}
+.trade-logo{
+    float: right;
+}
