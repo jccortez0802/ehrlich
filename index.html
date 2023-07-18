@@ -24,7 +24,7 @@
             <div class="options">
                 <ul class="list">                   
                     <li><a><img class="icon" src="./assets/images/bx_bx-user.svg"></a></li>
-                    <li><a><img class="icon" src="./assets/images/bx_bx-shopping-bag.svg"></a></li>
+                    <li><a href="#" onclick="showCart()"><img class="icon" src="./assets/images/bx_bx-shopping-bag.svg"></a></li>
                     <li><a><img class="icon" src="./assets/images/bx_bx-heart.svg"></a></li>
                     <li><a><img class="icon" src="./assets/images/bx_bx-support.svg"></a></li>
                     <li><a><img class="icon" src="./assets/images/bx_bx-search.svg"></a></li>
@@ -36,6 +36,12 @@
                         </div>
                     </li>
                 </ul>
+            </div>
+            <div class="shopping-cart" id="cart">
+                <div class="added-products" id="added-products">
+                    <span>No Products</span>
+                </div>
+                <a href="cart.html">Begin Checkout</a>
             </div>
         </nav>
         <section class="benefits container">
@@ -189,6 +195,7 @@
                     <img src="./assets/images/item1.png">
                     <span class="recent-name">Festive Looks Rust Red Ribbed Velvet Long Sleeve Bodysuit</span>
                     <span class="recent-price">$38</span>
+                    <button class="btn-buy" onclick="addCart(0)">Add to Cart </button>
                 </div>
                 <div class="recent-item">
                     <img src="./assets/images/item2.png">
@@ -197,6 +204,7 @@
                         <span class="recent-sale">$5.77</span>
                         <span class="recent-initial">$7.34</span>
                     </div>
+                    <button class="btn-buy" onclick="addCart(1)">Add to Cart </button>
                 </div>
                 <div class="recent-item">
                     <img src="./assets/images/item3.png">
@@ -205,11 +213,13 @@
                         <span class="recent-sale">$29</span>
                         <span class="recent-initial">$39</span>
                     </div>
+                    <button class="btn-buy" onclick="addCart(2)">Add to Cart </button>
                 </div>
                 <div class="recent-item">
                     <img src="./assets/images/item4.png">
                     <span class="recent-name">Diamante Puff Sleeve Dress - Black</span>
                     <span class="recent-price">$45.99</span>
+                    <button class="btn-buy" onclick="addCart(3)">Add to Cart </button>
                 </div>
                 <div class="recent-item">
                     <img src="./assets/images/item5.png">
@@ -218,6 +228,7 @@
                         <span class="recent-sale">$69</span>
                         <span class="recent-initial">$99.95</span>
                     </div>
+                    <button class="btn-buy" onclick="addCart(4)">Add to Cart </button>
                 </div>
             </div>
         </section>
